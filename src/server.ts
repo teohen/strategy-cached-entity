@@ -1,10 +1,14 @@
 import express from 'express'
-import '@controllers/UsersController'
+import routes from './routes/routes'
+
+const port = 3333
 
 const app = express()
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (request, response) => {
-  return response.json({ message: 'Hello World' })
+app.use(routes)
+
+app.listen(port, () => {
+  console.log(`Server running on the port: ${port}`)
 })
-
-app.listen(3333)
