@@ -1,6 +1,6 @@
 {
   "name": "node-setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Diego Fernandes <diego.schell.f@gmail.com>",
   "license": "MIT",
